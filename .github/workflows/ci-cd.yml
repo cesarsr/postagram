@@ -18,7 +18,7 @@ jobs:
         docker-compose logs
     - name: Running Tests inside Docker containers
       run: |
-        docker-compose exec  api pytest
+        docker-compose exec -t api pytest
         docker-compose logs
 
   deploy:
