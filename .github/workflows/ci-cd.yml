@@ -19,6 +19,7 @@ jobs:
     - name: Running Tests inside Docker containers
       run: |
         docker-compose exec -T api pytest
+        docker-compose logs
 
   deploy:
     name: Deploying on EC2 via SSH
