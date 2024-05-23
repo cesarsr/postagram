@@ -12,6 +12,7 @@ jobs:
     - name: Injecting environment vars
       run: |
         echo "${{ secrets.TEST_SECRETS }}" >> .env
+        cat .env
     - name: Building Docker containers
       run: |
         docker-compose up -d --build
