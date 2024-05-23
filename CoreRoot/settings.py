@@ -150,7 +150,7 @@ REST_FRAMEWORK = {
 
 # CORS settings
 
-CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "").split(",")
+CORS_ALLOWED_ORIGINS = os.getenv("CORS_ALLOWED_ORIGINS", "http://postagram.s3-website.eu-central-1.amazonaws.com").split(",")
 
 # Media files
 MEDIA_URL = "/media/"
