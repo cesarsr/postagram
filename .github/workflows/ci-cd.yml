@@ -12,7 +12,8 @@ jobs:
     - name: Injecting environment vars
       run: |
         echo "${{ secrets.TEST_SECRETS }}" >> .env
-        cat .env
+        echo "${{ vars.CORS_ALLOWED_ORIGINS }}" >> .env
+        echo "${{ vars.CORS_ALLOWED_ORIGINS }}"
     - name: Building Docker containers
       run: |
         docker-compose up -d --build
