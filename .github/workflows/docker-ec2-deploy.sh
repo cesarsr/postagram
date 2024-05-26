@@ -35,3 +35,4 @@ git pull origin main;
 docker compose up -d --build
 
 exit 0;
+ 
