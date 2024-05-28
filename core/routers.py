@@ -6,7 +6,7 @@ from core.auth.viewsets import (
     RegisterViewSet,
     LoginViewSet,
     RefreshViewSet,
-    LogoutViewSet,
+    LogoutViewSet
 )
 from core.comment.viewsets import CommentViewSet
 
