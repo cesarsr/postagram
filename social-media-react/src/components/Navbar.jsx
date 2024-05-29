@@ -12,16 +12,16 @@ function NavigationBar() {
 
   const user = getUser();
 
-  const handleLogout = () => {
-    userActions.logout().catch((e) =>
-      setToaster({
-        type: "danger",
-        message: "Logout failed",
-        show: true,
-        title: e.data?.detail | "An error occurred.",
-      })
-    );
-  };
+//  const handleLogout = () => {
+//    userActions.logout().catch((e) =>
+//      setToaster({
+//        type: "danger",
+//        message: "Logout failed",
+//        show: true,
+//        title: e.data?.detail | "An error occurred.",
+//      })
+//    );
+//  };
 
   return (
     <Navbar bg="primary" variant="dark">
